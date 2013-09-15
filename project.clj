@@ -1,8 +1,8 @@
 (defproject storypointestimator/storypointestimator "0.0.1-SNAPSHOT"
-  :description "FIXME: Android project description"
-  :url "http://example.com/FIXME"
-  :license {:name "Eclipse Public License"
-            :url "http://www.eclipse.org/legal/epl-v10.html"}
+  :description "Story Point Estimator for user stories"
+  ;:url "http://example.com/FIXME"
+  :license {:name "GNU General Public License, version 2"
+            :url "https://www.gnu.org/licenses/gpl-2.0.html"}
   :min-lein-version "2.0.0"
 
   :warn-on-reflection true
