@@ -37,7 +37,7 @@
                                 :layout-width :fill
                                 :layout-height :fill}
                 [:text-view {:def `points-text
-                             :text "0"
+                             :text ""
                              :text-size [100 :dp]}]
                 [:linear-layout {:layout-weight 2}]
                 [:button {:text "Estimate!"
