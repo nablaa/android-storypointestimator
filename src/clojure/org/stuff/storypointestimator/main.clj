@@ -7,6 +7,8 @@
 
 (def ^:const MAX-POINT-VALUE 40)
 
+(declare ^android.widget.TextView points-text)
+
 (defn next-fibonacci [l]
   (+ (nth l (- (count l) 1))
      (nth l (- (count l) 2))))
@@ -23,7 +25,7 @@
   (rand-nth (fibonaccies-smaller-than MAX-POINT-VALUE)))
 
 (defn notify-estimate [_]
-  (toast (str (get-story-point-estimate)) :long))
+  (.setText points-text (str (get-story-point-estimate))))
 
 (defactivity org.stuff.storypointestimator.MainActivity
   :def a
@@ -31,6 +33,12 @@
   (fn [this bundle]
     (on-ui
      (set-content-view! a
-      (make-ui [:linear-layout {}
-                [:button {:text "Estimate"
+      (make-ui [:linear-layout {:orientation :vertical
+                                :layout-width :fill
+                                :layout-height :fill}
+                [:text-view {:def `points-text
+                             :text "0"
+                             :text-size [100 :dp]}]
+                [:linear-layout {:layout-weight 2}]
+                [:button {:text "Estimate!"
                           :on-click notify-estimate}]])))))
