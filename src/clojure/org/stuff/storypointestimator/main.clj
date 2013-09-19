@@ -9,9 +9,9 @@
 
 (declare ^android.widget.TextView points-text)
 
-(defn next-fibonacci [l]
-  (+ (nth l (- (count l) 1))
-     (nth l (- (count l) 2))))
+(defn next-fibonacci [fibs]
+  (+ (nth fibs (- (count fibs) 1))
+     (nth fibs (- (count fibs) 2))))
 
 (defn fibonaccies-smaller-than-generated [n generated]
   (if (> (next-fibonacci generated) n)
