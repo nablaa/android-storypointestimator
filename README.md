@@ -29,4 +29,5 @@ For more instructions, see lein droid
 ## Screenshots
 
 ![](https://f.cloud.github.com/assets/196884/1175092/ded08a86-2152-11e3-803d-1c47b6221bbd.png)
+
 ![](https://f.cloud.github.com/assets/196884/1175093/dece307e-2152-11e3-84e3-e2746f5a77ba.png)
