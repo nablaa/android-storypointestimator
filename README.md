@@ -25,3 +25,8 @@ For more instructions, see lein droid
 [tutorial](https://github.com/clojure-android/lein-droid/wiki/Tutorial).
 
 **NOTE: Do not try to use JDK7 -- it doesn't work with lein droid. Use JDK6**
+
+## Screenshots
+
+![](https://f.cloud.github.com/assets/196884/1175052/5ab2e85c-2152-11e3-8694-dee027a288b6.png)
+![](https://f.cloud.github.com/assets/196884/1175051/5aa04aa8-2152-11e3-95ab-da9d32762fea.png)
